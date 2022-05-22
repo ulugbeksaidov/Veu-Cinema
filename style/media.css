@@ -1,0 +1,254 @@
+@media(max-width:1180px) {
+    .film_info {
+        flex-direction: column;
+    }
+
+    .film_box {
+        justify-content: center;
+    }
+
+    .row {
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    .col {
+        flex-shrink: 0;
+        max-width: 362px;
+        width: 100%;
+    }
+
+    .row::-webkit-scrollbar-thumb {
+        background: linear-gradient(90.09deg, #3800AF 0%, #BF7204 97.52%, #C27500 100%, #C27500 100%);
+        border-radius: 30px;
+    }
+
+    .row::-webkit-scrollbar {
+        height: 3px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        width: 560px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:750px) {
+    .widow {
+        background: rgba(255, 255, 255, 0.6);
+    }
+}
+
+@media(max-width:700px) {
+    .footer_info {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media(max-width:650px) {
+    .list {
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        top: -80px;
+        padding: 50px;
+        align-items: center;
+        right: -100%;
+        height: 100vh;
+        transition: 1s;
+    }
+
+    .header_nav {
+        padding: 20px;
+    }
+
+    .menu_icon {
+        display: block;
+        font-size: 30px;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        font-size: 30px;
+    }
+
+    #menu:checked+.list {
+        right: 0;
+    }
+
+    .intro_title {
+        font-size: 50px;
+        line-height: 120%;
+    }
+
+    .intro_text {
+        max-width: 570px;
+        width: 100%;
+    }
+
+    .intro {
+        height: 500px;
+    }
+
+}
+
+@media(max-width:600px) {
+    .title {
+        margin: 30px 0;
+    }
+
+    .grid {
+        max-width: 300px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .box_1 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .widow_title {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .widow_text {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .widow {
+        height: 450px;
+    }
+
+    .film_box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .film_info {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .film_item {
+        max-width: 264px;
+        width: 100%;
+    }
+}
+
+@media(max-width:500px) {
+
+    .intro_title {
+        font-size: 30px;
+    }
+
+    .intro_text {
+        font-size: 14px;
+        line-height: 150%;
+        margin: 20px 0;
+    }
+
+    .link,
+    .intro_link {
+        width: 130px;
+        height: 40px;
+    }
+
+    .intro {
+        height: 450px;
+    }
+
+    .game_text {
+        text-align: justify;
+    }
+}
+
+@media(max-width:450px) {
+    .game {
+        gap: 15px;
+    }
+
+    .game_title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .game_text {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .game {
+        height: 400px;
+    }
+    .footer_text{
+        font-size: 15px;
+        text-align: center;
+        line-height: 22px;
+    }
+    .footer_item{
+        gap: 30px;
+    }
+}
+
+@media(max-width:400px) {
+    .widow_title {
+        margin-top: 15px;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .widow_text {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 20px 0;
+    }
+
+    .widow {
+        height: 380px;
+    }
+}
+
+@media(max-width:350px) {
+    .footer{
+        margin-top: 30px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+    .game {
+        height: 370px;
+    }
+
+    .game_title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .game_text {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+
+    .header_top i {
+        font-size: 35px;
+    }
+}
